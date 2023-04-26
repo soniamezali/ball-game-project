@@ -156,8 +156,8 @@ const ballHeight = ball.offsetHeight;
 let ballX = Math.floor(Math.random() * (sectionWidth - ballWidth));
 let ballY = Math.floor(Math.random() * (sectionHeight - ballHeight));
 
-let ballSpeedX = 10;
-let ballSpeedY = 10;
+let ballSpeedX = 15;
+let ballSpeedY = 15;
 
 //falling element to catch//
 
@@ -166,5 +166,5 @@ const fallingBall = document.querySelector(".fallingBall");
 let fallBallX =
   Math.random() * (section1.offsetWidth - fallingBall.offsetWidth);
 let fallBallY = 0;
-let fallBallSpeed = 5;
+let fallBallSpeed = 8;
 let isFalling = true;

@@ -42,9 +42,9 @@ body {
 }
 
 .section1 {
-  /* display: none; */
-  /* background-color: white; */
   background-image: url(./img/4231176.jpg);
+  background-size: cover;
+
   border-radius: 0.4em;
   box-shadow: 0 0 3.2em white;
   position: absolute;
