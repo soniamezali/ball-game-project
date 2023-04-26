@@ -156,8 +156,8 @@ const ballHeight = ball.offsetHeight;
 let ballX = Math.floor(Math.random() * (sectionWidth - ballWidth));
 let ballY = Math.floor(Math.random() * (sectionHeight - ballHeight));
 
-let ballSpeedX = 10;
-let ballSpeedY = 10;
+let ballSpeedX = 15;
+let ballSpeedY = 15;
 
 //falling element to catch//
 
