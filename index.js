@@ -4,10 +4,18 @@ let score = 0;
 const win = document.getElementById("win");
 let animationId;
 let gameInProgress = false;
+// const goToGameButton = document.getElementById("go-to-game");
+// const rules = document.getElementsByClassName("pop-up-rules");
+// const scoreAndTitle = document.getElementsByClassName("score-and-title");
 
-// start
 startButton.addEventListener("click", startGame);
 
+// goToGameButton.addEventListener("click", () => {
+//   section1.style.display = "block";
+//   rules.style.display = "none";
+// });
+
+// start the game and moving my element1
 function startGame() {
   if (gameInProgress) {
     return;
@@ -54,6 +62,8 @@ function startGame() {
       isMoving = false;
     }
   });
+
+  // moving my balls and add score
 
   function fall() {
     ballX += ballSpeedX;

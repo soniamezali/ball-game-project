@@ -9,20 +9,20 @@
     <script src="./index.js" type="module"></script>
   </head>
   <body>
-    <div>
-      <dialog class="pop-up-rules" open>
-        <h1>Welcome to The ball game</h1>
-        <p>
-          Rules : In this game you have to catch the falling ball with the k
-        </p>
-        <p></p>
-        <form method="dialog">
-          <button>GOT IT !</button>
-        </form>
-      </dialog>
-    </div>
+    <section id="section0">
+      <div id="popup">
+        <dialog class="pop-up-rules">
+          <h1>Welcome to The ball game</h1>
+          <p>Rules :</p>
+
+          <form method="dialog">
+            <button>play!</button>
+          </form>
+        </dialog>
+      </div>
+    </section>
+
     <section class="section1">
-      <div class="space"></div>
       <div class="element1">
         <!-- <img src="" alt=""> -->
       </div>
@@ -32,13 +32,13 @@
       <div class="fallingBall"></div>
     </section>
 
-    <div>
-      <h1>title to come</h1>
+    <div class="score-and-title">
+      <h1>BALLER ADVENTURES</h1>
+      <div>Score: <span id="score">0</span></div>
+      <button id="start-game">Start game</button>
     </div>
-    <div>Score: <span id="score">0</span></div>
-    <button id="start-game">Start game</button>
     <dialog id="win">
-      <h1>Bravo you did it !</h1>
+      <h2>Bravo you did it !</h2>
     </dialog>
   </body>
 </html>

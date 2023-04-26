@@ -4,20 +4,21 @@
 }
 
 @font-face {
-  font-family: "";
-  src: url();
+  font-family: "titlepolice";
+  src: url("./font/Boba\ Cups.otf");
 }
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: lightslategrey;
+  background-color: #ff4081;
   flex-direction: column;
 }
 
-.pop-up-rules {
+#popup {
   background-color: rgba(0, 0, 0, 0.94);
+  position: absolute;
   font-size: 1rem;
   font-stretch: extra-expanded;
   color: white;
@@ -31,8 +32,8 @@ body {
   border: 4px solid grey;
 }
 
-.pop-up-rules button {
-  font-family: ;
+#popup button {
+  /* font-family: ; */
   background-color: black;
   color: white;
   font-size: 2rem;
@@ -41,30 +42,45 @@ body {
 }
 
 .section1 {
-  /* background-image: ; */
+  /* display: none; */
   background-color: white;
   border-radius: 0.4em;
-  box-shadow: 0 0 3.2em black;
-  /* position: absolute; */
-  height: 32em;
+  box-shadow: 0 0 3.2em white;
+  position: absolute;
+  height: 500px;
+  top: 200px;
+  width: 50em;
+  height: 500px;
+}
+
+.score-and-title {
+  position: absolute;
+  /* display: none; */
+  top: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 112px;
+  justify-content: space-between;
 }
 
 .element1 {
   background-color: black;
-  width: 5em;
-  height: 0.6em;
+
+  width: 80px;
+  height: 10px;
   position: absolute;
   left: calc(50% - 5%);
 }
 
 .ball {
   position: absolute;
-  width: 2rem;
+  width: 30px;
   aspect-ratio: 1;
   border-radius: 100vh;
-  background-color: ;
-  bottom: 20rem;
-  right: 13em;
+  background-color: purple;
+  bottom: 300px;
+  right: 200px;
 }
 
 .fallingBall {
@@ -72,21 +88,44 @@ body {
   width: 2rem;
   aspect-ratio: 1;
   border-radius: 100vh;
-  background-color: black;
-  top: 7em;
-  left: 0.8em;
-}
-
-.space {
-  width: 50em;
-  height: 500px;
-  border: 1px solid black;
-  border: 0;
+  background-color: red;
+  top: 10em;
+  left: 8.8em;
 }
 
 h1 {
+  color: white;
+  font-family: "titlepolice";
 }
 
-/* 
-@media (768px <= width <= 1024px) {
-    * { */
+.score-and-title div {
+  margin-left: 1200px;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+  font-family: "titlepolice";
+}
+
+#start-game {
+  background-color: white;
+  color: #ff4081;
+  font-size: 1.5rem;
+  margin: 1px;
+  border-radius: 40px;
+  font-family: "titlepolice";
+  padding: 15px 0px;
+  width: 250px;
+  border: 4px solid white;
+  box-shadow: 5px 5px 0 rgba(172, 137, 166, 0.94);
+}
+
+#win {
+  margin: 100px 300px;
+  padding: 100px;
+}
+
+h2 {
+  font-family: "titlepolice";
+  background-color: white;
+  color: black;
+}
