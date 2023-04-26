@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #ff4081;
+  background-color: #dfa6e0;
   flex-direction: column;
 }
 
@@ -43,7 +43,8 @@ body {
 
 .section1 {
   /* display: none; */
-  background-color: white;
+  /* background-color: white; */
+  background-image: url(./img/4231176.jpg);
   border-radius: 0.4em;
   box-shadow: 0 0 3.2em white;
   position: absolute;
@@ -66,7 +67,7 @@ body {
 
 .element1 {
   /* background-color: black; */
-  background-image: url(./img/pngtree-candy-blue-basket-gift-candy-png-image_3901924-2.png);
+  background-image: url(./img/good\ panier\ .png);
 
   width: 80px;
   height: 80px;
@@ -99,6 +100,7 @@ h1 {
   font-family: "titlepolice";
 }
 
+/* score */
 .score-and-title div {
   margin-left: 1200px;
   font-size: x-large;
@@ -107,6 +109,7 @@ h1 {
   font-family: "titlepolice";
 }
 
+/* start button */
 #start-game {
   background-color: white;
   color: #ff4081;
@@ -120,6 +123,7 @@ h1 {
   box-shadow: 5px 5px 0 rgba(172, 137, 166, 0.94);
 }
 
+/* when win  */
 #win {
   margin: 100px 300px;
   padding: 100px;
