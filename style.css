@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightslategrey;
+  flex-direction: column;
+}
+
+.section1 {
+  /* background-image: ; */
+  background-color: white;
+  border-radius: 0.4em;
+  box-shadow: 0 0 3.2em black;
+  position: relative;
+  height: 32em;
+}
+
+.element1 {
+  background-color: black;
+  width: 5em;
+  height: 0.6em;
+  position: absolute;
+  left: calc(50% - 5%);
+}
+
+.ball {
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 100vh;
+  background-color: black;
+  bottom: 20rem;
+  right: 13em;
+}
+
+.fallingBall {
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 100vh;
+  background-color: black;
+  top: 7em;
+  left: 0.8em;
+}
+
+.space {
+  width: 50em;
+  height: 500px;
+  border: 1px solid black;
+  border: 0;
+}
+
+h1 {
+}
+
+/* 
+@media (768px <= width <= 1024px) {
+    * { */
