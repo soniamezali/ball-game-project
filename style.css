@@ -183,3 +183,9 @@ body {
   color: #ff4081;
   font-size: 1.5em;
 }
+
+.gif {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
