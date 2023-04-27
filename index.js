@@ -24,21 +24,21 @@ function startGame() {
       switch (key) {
         case "ArrowLeft":
           event.preventDefault();
-          if (positionX > 0) positionX -= 40;
+          if (positionX > 0) positionX -= 20;
           break;
         case "ArrowRight":
           event.preventDefault();
           if (positionX < section1.offsetWidth - element1.offsetWidth)
-            positionX += 40;
+            positionX += 20;
           break;
         case "ArrowUp":
           event.preventDefault();
-          if (positionY > 0) positionY -= 40;
+          if (positionY > 0) positionY -= 20;
           break;
         case "ArrowDown":
           event.preventDefault();
           if (positionY < section1.offsetHeight - element1.offsetHeight)
-            positionY += 40;
+            positionY += 20;
           if (positionY > section1.offsetHeight - element1.offsetHeight) {
             positionY = section1.offsetHeight - element1.offsetHeight;
           }
