@@ -24,21 +24,21 @@ function startGame() {
       switch (key) {
         case "ArrowLeft":
           event.preventDefault();
-          if (positionX > 0) positionX -= 40;
+          if (positionX > 0) positionX -= 10;
           break;
         case "ArrowRight":
           event.preventDefault();
           if (positionX < section1.offsetWidth - element1.offsetWidth)
-            positionX += 40;
+            positionX += 10;
           break;
         case "ArrowUp":
           event.preventDefault();
-          if (positionY > 0) positionY -= 40;
+          if (positionY > 0) positionY -= 10;
           break;
         case "ArrowDown":
           event.preventDefault();
           if (positionY < section1.offsetHeight - element1.offsetHeight)
-            positionY += 40;
+            positionY += 10;
           if (positionY > section1.offsetHeight - element1.offsetHeight) {
             positionY = section1.offsetHeight - element1.offsetHeight;
           }
@@ -153,8 +153,8 @@ const ballHeight = ball.offsetHeight;
 let ballX = Math.floor(Math.random() * (sectionWidth - ballWidth));
 let ballY = Math.floor(Math.random() * (sectionHeight - ballHeight));
 
-let ballSpeedX = 13;
-let ballSpeedY = 13;
+let ballSpeedX = 20;
+let ballSpeedY = 20;
 
 //falling element to catch//
 
@@ -163,5 +163,5 @@ const fallingBall = document.querySelector(".fallingBall");
 let fallBallX =
   Math.random() * (section1.offsetWidth - fallingBall.offsetWidth);
 let fallBallY = 0;
-let fallBallSpeed = 8;
+let fallBallSpeed = 12;
 let isFalling = true;
