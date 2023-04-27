@@ -35,6 +35,10 @@ body {
   z-index: 5;
 }
 
+.pop-up-rules h1 {
+  color: #ff4081;
+  margin-bottom: 40px;
+}
 #section0 {
   position: relative;
   width: 100%;
@@ -43,13 +47,14 @@ body {
   place-items: center;
 }
 
-/* paly button */
+/* play button */
 .pop-up-rules button {
   font-family: "titlepolice";
   background-color: #dfa6e0;
   color: white;
   font-size: 5rem;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   padding: 10px 50px;
   border-radius: 80px;
   border: 3px solid white;
@@ -127,9 +132,6 @@ body {
   margin-top: 40px;
 }
 
-/* .score-and-title h1 {
-} */
-
 /* start button */
 #start-game {
   background-color: white;
@@ -179,4 +181,5 @@ body {
 
 #score {
   color: #ff4081;
+  font-size: 1.5em;
 }
