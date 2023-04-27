@@ -7,6 +7,7 @@
   font-family: "titlepolice";
   src: url("./font/Boba\ Cups.otf");
 }
+
 body {
   display: flex;
   align-items: center;
@@ -16,35 +17,45 @@ body {
   flex-direction: column;
 }
 
-#popup {
-  background-color: rgba(0, 0, 0, 0.94);
-  position: absolute;
-  font-size: 1rem;
+.pop-up-rules {
+  background-color: rgba(220, 212, 212, 0.94);
   font-stretch: extra-expanded;
-  color: white;
+  color: #ff4081;
+  font-family: "titlepolice";
+  font-size: 1.5rem;
   text-align: center;
-  position: fixed;
-  width: 750px;
-  height: 400px;
-  margin: auto;
+  position: relative;
+  width: 900px;
+  height: 600px;
+  margin-top: 6rem;
   padding: 120px 90px;
   border-radius: 15px;
-  border: 4px solid grey;
+  border: 4px solid magenta;
+  z-index: 5;
 }
 
-#popup button {
-  /* font-family: ; */
-  background-color: black;
+#section0 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.pop-up-rules button {
+  font-family: "titlepolice";
+  background-color: #dfa6e0;
   color: white;
-  font-size: 2rem;
-  padding: 15px 50px;
+  font-size: 5rem;
+  padding: 10px 50px;
+  margin-top: 1em;
   border-radius: 80px;
 }
 
+/* game surface */
 .section1 {
   background-image: url(./img/4231176.jpg);
   background-size: cover;
-
   border-radius: 0.4em;
   box-shadow: 0 0 3.2em white;
   position: absolute;
@@ -65,6 +76,7 @@ body {
   justify-content: space-between;
 }
 
+/* basket */
 .element1 {
   /* background-color: black; */
   background-image: url(./img/good\ panier\ .png);
@@ -75,6 +87,7 @@ body {
   left: calc(50% - 5%);
 }
 
+/* bouncing ball */
 .ball {
   position: absolute;
   width: 30px;
@@ -85,6 +98,7 @@ body {
   right: 200px;
 }
 
+/* ball to catch */
 .fallingBall {
   position: absolute;
   width: 2rem;
@@ -95,18 +109,21 @@ body {
   left: 8.8em;
 }
 
-h1 {
+/* title only */
+.score-and-title h1 {
   color: white;
   font-family: "titlepolice";
+  font-size: 4.5rem;
 }
 
-/* score */
+/* score only */
 .score-and-title div {
-  margin-left: 1200px;
-  font-size: x-large;
+  margin-left: 1000px;
+  font-size: 2rem;
   color: white;
   font-weight: bold;
   font-family: "titlepolice";
+  margin-top: 40px;
 }
 
 /* start button */
@@ -114,11 +131,10 @@ h1 {
   background-color: white;
   color: #ff4081;
   font-size: 1.5rem;
-  margin: 1px;
   border-radius: 40px;
   font-family: "titlepolice";
   padding: 15px 0px;
-  width: 250px;
+  width: 200px;
   border: 4px solid white;
   box-shadow: 5px 5px 0 rgba(172, 137, 166, 0.94);
 }
@@ -133,4 +149,8 @@ h2 {
   font-family: "titlepolice";
   background-color: white;
   color: black;
+}
+
+#score {
+  color: #ff4081;
 }
