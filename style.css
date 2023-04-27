@@ -9,6 +9,8 @@
 }
 
 body {
+  /* background: 
+  background-size: contain; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,10 +118,63 @@ body {
 }
 
 /* title only */
-.score-and-title h1 {
-  color: white;
+h1 .p1 {
+  color: red;
   font-family: "titlepolice";
   font-size: 4rem;
+}
+
+h1 .p2 {
+  color: yellow;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+
+h1 .p3 {
+  color: magenta;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+h1 .p4 {
+  color: blue;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+h1 .p5 {
+  color: purple;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+h1 .p6 {
+  color: mediumspringgreen;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+h1 .p7 {
+  color: orangered;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+h1 .p8 {
+  color: slateblue;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+
+h1 .p9 {
+  color: honeydew;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+
+h1 .p10 {
+  color: powderblue;
+  font-family: "titlepolice";
+  font-size: 4rem;
+}
+
+h1 {
+  display: flex;
 }
 
 /* score only */
@@ -147,6 +202,8 @@ body {
 
 /* when win  */
 #win {
+  background: url("./img/giphy\ \ confeti\ 2.gif");
+  background-size: contain;
   margin: 100px 300px;
   padding: 100px;
   background-color: rgba(220, 212, 212, 0.94);
@@ -173,19 +230,7 @@ body {
   font-size: 2rem;
 }
 
-/* h2 {
-  font-family: "titlepolice";
-  background-color: white;
-  color: black;
-} */
-
 #score {
   color: #ff4081;
   font-size: 1.5em;
-}
-
-.gif {
-  position: absolute;
-  display: flex;
-  align-items: center;
 }
