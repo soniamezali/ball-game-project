@@ -10,6 +10,8 @@ startButton.addEventListener("click", startGame);
 
 // start the game and moving my element1
 function startGame() {
+  score = 0;
+  newScore.textContent = score;
   if (gameInProgress) {
     return;
   }
@@ -115,8 +117,10 @@ function startGame() {
       }
       if (score === 1) {
         win.showModal();
+        gameInProgress = false;
         return cancelAnimationFrame(animationId);
       }
+
       animationId = requestAnimationFrame(fall);
     }
   }
@@ -149,8 +153,8 @@ const ballHeight = ball.offsetHeight;
 let ballX = Math.floor(Math.random() * (sectionWidth - ballWidth));
 let ballY = Math.floor(Math.random() * (sectionHeight - ballHeight));
 
-let ballSpeedX = 12;
-let ballSpeedY = 12;
+let ballSpeedX = 13;
+let ballSpeedY = 13;
 
 //falling element to catch//
 
