@@ -113,7 +113,7 @@ function startGame() {
           Math.random() * (section1.offsetWidth - fallingBall.offsetWidth);
         fallBallY = 0;
       }
-      if (score === 30) {
+      if (score === 3) {
         win.showModal();
         return cancelAnimationFrame(animationId);
       }
@@ -149,8 +149,8 @@ const ballHeight = ball.offsetHeight;
 let ballX = Math.floor(Math.random() * (sectionWidth - ballWidth));
 let ballY = Math.floor(Math.random() * (sectionHeight - ballHeight));
 
-let ballSpeedX = 15;
-let ballSpeedY = 15;
+let ballSpeedX = 12;
+let ballSpeedY = 12;
 
 //falling element to catch//
 
