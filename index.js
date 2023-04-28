@@ -115,7 +115,7 @@ function startGame() {
           Math.random() * (section1.offsetWidth - fallingBall.offsetWidth);
         fallBallY = 0;
       }
-      if (score === 5) {
+      if (score === 3) {
         win.showModal();
         gameInProgress = false;
         return cancelAnimationFrame(animationId);
