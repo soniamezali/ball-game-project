@@ -6,7 +6,6 @@ by: Sonia Mezali
 
 To get started with the game:
 
-- My Clone repository: https://github.com/soniamezali/ball-game-project.git
 - URL game: https://soniamezali.github.io/ball-game-project/
 
 
