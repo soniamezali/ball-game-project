@@ -1,7 +1,17 @@
 # candy-game-project
 by: Sonia Mezali
 
-## what is it?
+
+## getting started
+
+To get started with the game:
+
+- My Clone repository: https://github.com/soniamezali/ball-game-project.git
+- URL game: https://soniamezali.github.io/ball-game-project/
+
+
+## Game description
+
 This is my first project for IronHack bootcamp.
 It's made with HTML,CSS,JAVASCRIPT.
 
@@ -16,7 +26,6 @@ score 5 points. However, be careful because the purple candies are
 toxic and move randomly, and if you touch them, you will lose all
 your points. Use the arrow keys on your keyboard to move your basket
 and catch the candies. 
-
 
 
 ## why?
